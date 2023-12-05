@@ -59,6 +59,11 @@ hr {
   display: flex;
 }
 
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
 #profile {
   display: flex;
   align-items: flex-start;
@@ -79,6 +84,7 @@ hr {
 
 .profile-info h1 {
   font-size: 2rem;
+  text-wrap: nowrap;
   margin-bottom: 0;
 }
 
@@ -160,8 +166,6 @@ hr {
 }
 
 #projects h2 {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   margin-top: 0;
 }
@@ -295,5 +299,72 @@ hr {
     margin-right: 25px;
     width: 155px;
     height: 175px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #profile {
+    text-align: center;
+  }
+
+  #profile img {
+    width: 80%;
+  }
+
+  .profile-info {
+    margin: 0;
+  }
+
+  .profile-info hr {
+    width: 100%;
+  }
+
+  #background {
+    text-align: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #skills {
+    margin: 0;
+  }
+
+  #skills h2 {
+    text-align: center;
+  }
+
+  #skills .row {
+    flex-direction: column;
+  }
+
+  #technologies {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .project {
+    margin-bottom: 50px;
+    width: 140px;
+  }
+
+  .project {
+    margin: 10px;
+  }
+
+  #projects .wrapper .col .row {
+    margin-bottom: 20px;
+  }
+
+  #inquires {
+    text-align: center;
   }
 }
